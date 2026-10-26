@@ -40,7 +40,7 @@ class CheckoutPage extends StatelessWidget {
                 : ListView.separated(
                     padding: const EdgeInsets.symmetric(horizontal: 16),
                     itemCount: items.length,
-                    separatorBuilder: (_, __) => const Divider(),
+                    separatorBuilder: (_, _) => const Divider(),
                     itemBuilder: (context, index) {
                       final p = items[index].key;
                       final qty = items[index].value;

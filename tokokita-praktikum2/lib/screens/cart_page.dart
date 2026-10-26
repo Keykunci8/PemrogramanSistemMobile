@@ -33,7 +33,7 @@ class CartPage extends StatelessWidget {
               child: ListView.separated(
                 padding: const EdgeInsets.all(12),
                 itemCount: entries.length,
-                separatorBuilder: (_, __) => const Divider(),
+                separatorBuilder: (_, _) => const Divider(),
                 itemBuilder: (context, index) => _CartItemTile(
                   product: entries[index].key,
                   qty: entries[index].value,
@@ -139,7 +139,7 @@ class _CartItemTile extends StatelessWidget {
               width: 56,
               height: 56,
               fit: BoxFit.cover,
-              errorBuilder: (_, __, ___) => Container(
+              errorBuilder: (_, _, _) => Container(
                 width: 56,
                 height: 56,
                 color: Colors.grey[200],
